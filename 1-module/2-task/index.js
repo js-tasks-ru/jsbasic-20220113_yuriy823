@@ -10,7 +10,7 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
-  return typeof(name) != 'undefined' && typeof(name) != 'object' && name.length>=4 && name.indexOf(' ')==-1;
+  return !!name && name.length>=4 && !(name.includes(' '));
 }
 
 function sayHello() {
