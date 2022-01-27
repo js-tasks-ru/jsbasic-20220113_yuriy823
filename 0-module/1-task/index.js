@@ -1,3 +1,1 @@
-function sum(m, n) {
-  return m + n;
-}
+let sum = (m, n) => m + n;
